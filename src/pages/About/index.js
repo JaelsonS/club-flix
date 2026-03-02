@@ -1,5 +1,17 @@
 import { Link } from 'react-router-dom';
 import './about.css';
+import { 
+  FaFilm, 
+  FaStar, 
+  FaMobileAlt, 
+  FaSearch, 
+  FaInstagram, 
+  FaGithub, 
+  FaEnvelope, 
+  FaArrowLeft 
+} from 'react-icons/fa';
+
+import { SiX } from 'react-icons/si';
 
 function About() {
   return (
@@ -32,22 +44,30 @@ function About() {
           <h2>O Que Oferecemos</h2>
           <div className="features-grid">
             <div className="feature-card">
-              <span className="feature-icon">🎬</span>
+              <span className="feature-icon">
+  <FaFilm />
+</span>
               <h3>Catálogo Extenso</h3>
               <p>Acesso a milhares de filmes e informações detalhadas sobre cada um</p>
             </div>
             <div className="feature-card">
-              <span className="feature-icon">⭐</span>
+              <span className="feature-icon">
+  <FaStar />
+</span>
               <h3>Avaliações</h3>
               <p>Veja as avaliações da comunidade e faça suas próprias análises</p>
             </div>
             <div className="feature-card">
-              <span className="feature-icon">📱</span>
+              <span className="feature-icon">
+  <FaMobileAlt />
+</span>
               <h3>Interface Intuitiva</h3>
               <p>Design limpo e responsivo que funciona em qualquer dispositivo</p>
             </div>
             <div className="feature-card">
-              <span className="feature-icon">🔍</span>
+              <span className="feature-icon">
+  <FaSearch />
+</span>
               <h3>Descoberta Fácil</h3>
               <p>Encontre novos filmes facilmente com nossa navegação avançada</p>
             </div>
@@ -80,23 +100,38 @@ function About() {
 
         <section className="about-section contact-section">
           <h2>Conecte-se Conosco</h2>
-          <p>Tem dúvidas ou sugestões? Adoraríamos ouvir sua opinião!</p>
+          <p>Tem dúvidas, sugestões ou quer falar comigo? Meus canais estão abaixo:</p>
           <div className="contact-links">
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="contact-link">
-              <span className="contact-icon">💻</span> GitHub
+            <a href="https://www.instagram.com/jaelsonsantoos" target="_blank" rel="noopener noreferrer" className="contact-link">
+              <span className="feature-icon">
+  <FaInstagram size={28} />
+</span> 
             </a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="contact-link">
-              <span className="contact-icon">𝕏</span> Twitter
+            <a href="https://x.com/jaelsonsil56152?s=21" target="_blank" rel="noopener noreferrer" className="contact-link">
+              <span className="feature-icon">
+  <SiX size={28} />
+</span> 
             </a>
-            <a href="mailto:contact@clubflix.com" className="contact-link">
-              <span className="contact-icon">✉️</span> Email
+            <a href="mailto:jaelsonsilva345@gmail.com" className="contact-link">
+              <span className="feature-icon">
+  <FaEnvelope size={28} />
+</span> 
             </a>
+            <a href="https://github.com/JaelsonS" target="_blank" rel="noopener noreferrer" className="contact-link">
+              <span className="feature-icon">
+  <FaGithub size={28} />
+</span> 
+            </a>
+             <p className="portfolio-link">
+            Confira meu portfólio: <a href="https://portfolio-santos.vercel.app" target="_blank" rel="noopener noreferrer">portfolio-santos.vercel.app</a>
+          </p>
           </div>
+         
         </section>
 
         <div className="about-footer">
           <Link to="/" className="back-button">
-            <span>←</span> Voltar para Home
+            <FaArrowLeft /> Voltar para Home
           </Link>
           <p className="copyright">© 2026 Club Flix. Todos os direitos reservados.</p>
         </div>
